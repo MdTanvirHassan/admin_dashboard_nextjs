@@ -5,7 +5,7 @@ import { data } from '../data/data.js';
 
 const orders = () => {
   return (
-    <div className='bg-gray-100 min-h-screen  w-[85%]  ml-[15%] m-auto '>
+    <div className='bg-gray-100 min-h-screen  w-full md:w-[85%] md:ml-[15%] m-auto '>
       <div className='flex justify-between px-4 pt-4'>
         <h2>Orders</h2>
         <h2>Welcome Back, Tanvir</h2>
