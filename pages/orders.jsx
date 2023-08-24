@@ -5,10 +5,10 @@ import { data } from '../data/data.js';
 
 const orders = () => {
   return (
-    <div className='bg-gray-100 min-h-screen'>
+    <div className='bg-gray-100 min-h-screen  w-[85%]  ml-[15%] m-auto '>
       <div className='flex justify-between px-4 pt-4'>
         <h2>Orders</h2>
-        <h2>Welcome Back, Clint</h2>
+        <h2>Welcome Back, Tanvir</h2>
       </div>
       <div className='p-4'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>

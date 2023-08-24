@@ -4,10 +4,10 @@ import { data } from '../data/data.js';
 
 const customers = () => {
   return (
-    <div className='bg-gray-100 min-h-screen'>
+    <div className='bg-gray-100 min-h-screen w-[85%] m-auto  ml-[15%]'>
       <div className='flex justify-between p-4'>
         <h2>Customers</h2>
-        <h2>Welcome Back, Clint</h2>
+        <h2>Welcome Back, Tanvir</h2>
       </div>
       <div className='p-4'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>

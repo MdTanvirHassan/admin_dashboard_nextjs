@@ -8,32 +8,43 @@ import { FiSettings } from 'react-icons/fi';
 const Sidebar = ({ children }) => {
   return (
     <div className='flex'>
-      <div className='fixed w-20 h-screen p-4 bg-white border-r-[1px] flex flex-col justify-between'>
-        <div className='flex flex-col items-center'>
+      <div className='fixed w-60 h-screen p-2 bg-[#000] text-white border-r-[1px] flex flex-col justify-between'>
+        <div className='flex flex-col items-start'>
           <Link href='/'>
             <div className='bg-purple-800 text-white p-3 rounded-lg inline-block'>
-              <RxSketchLogo size={20} />
+              <div className="md:flex space-x-1">
+                <RxSketchLogo size={20} /> <span className="text-xs font-bold">HRM PAYROLL</span>
+              </div>
+             
             </div>
           </Link>
           <span className='border-b-[1px] border-gray-200 w-full p-2'></span>
-          <Link href='/'>
-            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <RxDashboard size={20} />
+          <Link href='/'  className=' hover:bg-green-500 cursor-pointer rounded-lg w-full'>
+            <div className='  cursor-pointer my-2 p-1 rounded-lg inline-block'>
+            <div className="md:flex space-x-1">
+              <RxDashboard size={20} /> <span className="text-sm font-bold">Dashboard</span>
+              </div>
             </div>
           </Link>
-          <Link href='/customers'>
-            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <RxPerson size={20} />
+          <Link href='/customers' className=' hover:bg-green-500 cursor-pointer rounded-lg w-full'>
+            <div className='  cursor-pointer my-2 p-1 rounded-lg inline-block'>
+            <div className="md:flex space-x-1">
+              <RxPerson size={20} /> <span className="text-sm font-bold">Employees</span>
+            </div>
             </div>
           </Link>
-          <Link href='/orders'>
-            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <HiOutlineShoppingBag size={20} />
+          <Link href='/orders'  className=' hover:bg-green-500 cursor-pointer rounded-lg w-full'>
+            <div className=' hover:bg-gray-200 cursor-pointer my-2 p-1 rounded-lg inline-block'>
+            <div className="md:flex space-x-1">
+              <HiOutlineShoppingBag size={20} /> <span className="text-sm font-bold">Dashboard</span>
+            </div>
             </div>
           </Link>
-          <Link href='/'>
-            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <FiSettings size={20} />
+          <Link href='/'  className='hover:bg-green-500 cursor-pointer rounded-lg w-full'>
+            <div className='  cursor-pointer my-2 p-1 rounded-lg inline-block'>
+            <div className="md:flex space-x-1">
+              <FiSettings size={20} /> <span className="text-sm font-bold">Settings</span>
+              </div>
             </div>
           </Link>
         </div>
